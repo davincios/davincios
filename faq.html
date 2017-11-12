@@ -1,8 +1,15 @@
+<!-- ToDo:
+1) Add all affirm questions into FAQ questions page
+2)
+-->
+
 
 <html>
   <head>
     <title>Flymble Business Solutions</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <link rel="stylesheet" type="text/css" href="./css/styles.css">
   </head>
 
@@ -10,19 +17,112 @@
 <div class="nav">
     <div class="container">
       <ul class="pull-left">
-        <li><a href="https://flymble.com/">Flymble</a></li>
+        <li><a href="main.html">Home</a></li>
         <li><a href="https://flymble.com/search?departureTakeOff=true&departureTime=0&departureTime=1439&departureTimeLanding=0&departureTimeLanding=1439&destination_place=San+Francisco&number_of_months=10&number_of_passengers=1&oneWay=false&outbound_place=London&returnTakeOff=true&returnTime=0&returnTime=1439&returnTimeLanding=0&returnTimeLanding=1439&sortBy=2&stopover=0&stopover=25&stops&totalDuration=60">San Francisco $42</a></li>
         <li><a href="https://flymble.com/search?departureTakeOff=true&departureTime=0&departureTime=1439&departureTimeLanding=0&departureTimeLanding=1439&destination_place=New+York&number_of_months=10&number_of_passengers=1&oneWay=false&outbound_place=London&returnTakeOff=true&returnTime=0&returnTime=1439&returnTimeLanding=0&returnTimeLanding=1439&sortBy=2&stopover=0&stopover=25&stops&totalDuration=60">New York $27</a></li>
         <li><a href="https://flymble.com/search?departureTakeOff=true&departureTime=0&departureTime=1439&departureTimeLanding=0&departureTimeLanding=1439&destination_place=LAX&number_of_months=10&number_of_passengers=1&oneWay=false&outbound_place=London&returnTakeOff=true&returnTime=0&returnTime=1439&returnTimeLanding=0&returnTimeLanding=1439&sortBy=2&stopover=0&stopover=25&stops&totalDuration=60">Los Angeles $39</a></li>
-        <li><a href="https://flymble.com/search?departureTakeOff=true&departureTime=0&departureTime=1439&departureTimeLanding=0&departureTimeLanding=1439&destination_place=BOG&number_of_months=10&number_of_passengers=1&oneWay=false&outbound_place=London&returnTakeOff=true&returnTime=0&returnTime=1439&returnTimeLanding=0&returnTimeLanding=1439&sortBy=0&stopover=0&stopover=25&stops&totalDuration=60">Bogota $35</a></li>
       </ul>
       <ul class="pull-right">
         <li><a href="https://flymble.slack.com">Slack</a></li>
         <li><a href="https://www.reddit.com/r/Flymble/">Reddit</a></li>
         <li><a href="https://twitter.com/flymbletravel?lang=en">Twitter</a></li>
+        <li><a href="faq.html">FAQ</a></li>
       </ul>
     </div>
   </div>
+  <body>
+      <div class="faq_section">
+        <div class="row">
+            <div class="col-md-6 col-xs-12">
+              <div class="container">
+                  <h3 class="faq_Title">Frequently Asked Questions</h3>
+                  <p><strong>Note:</strong> The <strong>FAQ</strong> list is a collection of answers and by no means extensive. Should you have an unanswered question, don't hesitate to contact us!</p>
+                    <div class="panel-group" id="accordion">
+                      <div class="panel panel-default">
+                        <div class="panel-heading">
+                          <h4 class="panel-title">
+                          <a href="#q1" data-parent="#accordion" data-toggle="collapse">What is an e-ticket?</a>
+                          </h4>
+                        </div>
+                        <div id="q1" class="panel-collapse collapse">
+                          <div class="panel-body">The e-ticket is your flight confirmation from Kiwi.com which you should print out and bring with you on your trip. After your reservation is complete, we will send you an email confirmation with an attached e-ticket.</div>
+                          <div class="panel-footer">Please read your e-ticket carefully because it contains important information about your flights and the check-in process. If your flight is not eligible for online check-in, you will need to show the airline your e-ticket so that they can print out your boarding pass.</div>
+                        </div>
+                      </div>
+                      <div class="panel panel-default">
+                        <div class="panel-heading">
+                          <h4 class="panel-title">
+                          <a href="#q2" data-parent="#accordion" data-toggle="collapse">What if there is an delay in receiving my e-ticket?</a>
+                          </h4>
+                        </div>
+                        <div id="q2" class="panel-collapse collapse">
+                          <div class="panel-body">We have already started processing your booking. There may be a delay due to minor technical issues and we will send you confirmation as soon as the booking has been completed</div>
+                          <div class="panel-footer">If you have not received any email from us at all, please contact our Customer Support Team to ensure that we have the correct email address for you.</div>
+                        </div>
+                      </div>
+                      <div class="panel panel-default">
+                        <div class="panel-heading">
+                          <h4 class="panel-title">
+                          <a href="#q3" data-parent="#accordion" data-toggle="collapse">Which name should I use when booking my ticket?</a>
+                          </h4>
+                        </div>
+                        <div id="q3" class="panel-collapse collapse">
+                          <div class="panel-body">You should use the names exactly as they are written in your passport or travel ID.</div>
+                          <div class="panel-footer">Your passport will indicate which names are first names and which names are surnames.
 
+Examples:
+If you have recently been married but your passport still has your maiden name, you should use your maiden name in the booking.
+If your passport says "John James Smith" but you don't commonly use your middle name, you still need to add it to your booking.
+Your middle name should be added together with your first name in the same input box. In this example, the first names would be John James.
+Similarly, all surnames should be added together in the correct order in the surname box.
+Some airlines will not allow you to board the aircraft if the name on your booking does not match your travel ID or passport.
+Airlines can charge a fee to correct your name after the booking is made.</div>
+                        </div>
+                      </div>
+                      <div class="panel panel-default">
+                        <div class="panel-heading">
+                          <h4 class="panel-title">
+                          <a href="#q4" data-parent="#accordion" data-toggle="collapse">How do I know if my tickets are reserved?</a>
+                          </h4>
+                        </div>
+                        <div id="q4" class="panel-collapse collapse">
+                          <div class="panel-body">As soon as you receive the confirmation email.</div>
+                          <div class="panel-footer">You should receive the confirmation email less than 30 minutes after making your booking.</div>
+                        </div>
+                      </div>
+                      <div class="panel panel-default">
+                        <div class="panel-heading">
+                          <h4 class="panel-title">
+                          <a href="#q5" data-parent="#accordion" data-toggle="collapse">What phone number should I provide?</a>
+                          </h4>
+                        </div>
+                        <div id="q5" class="panel-collapse collapse">
+                          <div class="panel-body">Please provide us with one or more phone numbers that we can reliably reach you on throughout your travels.</div>
+                          <div class="panel-footer">If there are any schedule changes, cancellations, airport strikes, etc, we need to inform you and let you know your options.
 
+Entering a phone number
+Select your country code.
+Add your phone number in the international format.
+For example, if you are from the UK, you should remove the first zero from your number.</div>
+                        </div>
+                      </div>
+                      <div class="panel panel-default">
+                        <div class="panel-heading">
+                          <h4 class="panel-title">
+                          <a href="#q6" data-parent="#accordion" data-toggle="collapse">What If I didn't receive a confirmation e-mail of my flight tickets?</a>
+                          </h4>
+                        </div>
+                        <div id="q6" class="panel-collapse collapse">
+                          <div class="panel-body">Please check your spam folder and then contact us if you do not find anything.</div>
+                          <div class="panel-footer">You should receive an email confirmation for your flights within two hours of making your booking, otherwise:
+It could be in your spam folder
+There could have been a typo in your email address when you created the booking, so please contact us on chat or by phone to correct this for you</div>
+                        </div>
+                      </div>
+                </div>
+              </div>
+              </div>
+        </div>
+      </div>
+   </body>
   </html>

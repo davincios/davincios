@@ -57,3 +57,25 @@ body {
 .faq_section {
   padding: 80px;
 }
+
+.footer {
+  position: relative;
+  background-color: black;
+  height: 245px;
+}
+
+.footer a {
+  color: #ffff;
+  font-size: 11px;
+    padding: 14px 10px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.footer li {
+  display: inline;
+}
+
+socialList {
+  margin-top: 5px;
+}

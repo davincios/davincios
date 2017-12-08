@@ -10,28 +10,89 @@ body {
 }
 
 .nav {
-  position: fixed;
-  background-color: black;
   width: 100%;
 }
 
-.nav a {
-  color: #fff;
-  font-size: 11px;
-  font-weight: bold;
-  padding: 14px 10px;
-  text-transform: uppercase;
+.nav ul {
+  margin: 30px 80px;
+  padding: 0px;
+  display: flex;
 }
 
-.nav li {
+.nav ul li {
+  list-style: none;
+  padding: 10px 55px;
   display: inline;
 }
 
+.nav ul li a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1.3em;
+  color: white;
+  padding: 14px 10px;
+  position: relative;
+}
+
+.nav ul li a:before {
+  content: '';
+  width: 0;
+  height: 5px;
+  background: #00bcd4;
+  position: absolute;
+  top: 120%;
+  left: 0;
+  transition: .5s;
+  mix-blend-mode: multiply;
+}
+
+.nav ul li a:after {
+  content: '';
+  width: 0;
+  height: 5px;
+  background: #f0f;
+  position: absolute;
+  top: 120%;
+  right: 0;
+  transition: .5s;
+  mix-blend-mode: multiply;
+}
+
+.nav ul li:hover a:before {
+  width:50%;
+  transform: translateX(100%);
+}
+
+.nav ul li:hover a:after {
+  width:50%;
+  transform: translateX(-100%);
+}
+
+
 .jumbotron {
-  background-image:url('https://www.journeyera.com/wp-content/uploads/2016/11/philippines-backpacking-guide-05439.jpg');
+  background-color: black;
   height: 500px;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.logo {
+  text-align: center;
+}
+
+.message {
+    color: #fff;
+    font-size: 1.3em;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.jumbotron img {
+  vertical-align: middle;
+  max-width: 268px;
+  max-height: 268px;
+  color: #bfbfbf;
+  float: none;
 }
 
 .jumbotron .container {
@@ -40,18 +101,56 @@ body {
   color: white;
 }
 
-.learn-more {
-  background-color: #f7f7f7;
+.cta_wrapper {
+  margin-top: 25px;
+  text-align: center;
 }
 
-.learn-more h3 {
-  font-family: 'Shift', sans-serif;
-  font-size: 18px;
-  font-weight: bold;
+
+.cta-group {
+  text-decoration: none;
+  border: 1px solid #ffffff;
+  border-radius: 24px;
+  text-transform: uppercase;
+  font-size: 16px;
+  color: #FFFFFF;
+  width: 196px;
+  text-align: center;
+  display: inline-block;
+  height: 48px;
+  line-height: 47px;
+  padding: 0;
+  cursor: pointer;
+  font-weight:400;
+  transition:all 0.3s linear;
+  background: transparent;
 }
 
-.learn-more a {
-  color: #00b0ff;
+.cta-group:hover{
+  background-color:#ffffff !important;
+  border:2px solid transparent;
+  color: black;
+  text-decoration: none;
+}
+
+.cta-group:focus {
+  outline: none;
+  text-decoration: none;
+}
+
+.features {
+  height: 100px;
+  line-height: 100px;
+  border-top: 1px solid rgba(255,255,255,0.14);
+  position: relative;
+  background-color: black;
+}
+
+.features-message {
+  font-size: 20px;
+  text-align: center;
+  font-weight:300;
+  color: #ffffff;
 }
 
 .faq_section {

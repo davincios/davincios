@@ -14,7 +14,7 @@ body {
 }
 
 .nav ul {
-  margin: 30px 70px;
+  margin: 30px 80px;
   padding: 0px;
   display: inline-block;
   list-style-type: none;
@@ -423,6 +423,8 @@ ul.todo#completed:after {
   color: #aaa;
 }
 
-.webvr {
-
+@media screen and (max-width: 1100px) {
+  .nav {
+    display: none;
+  }
 }

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!-- Todo List:
 1) Add fixed navbar [done] m
-2) Create faq page.k
+2) Create faq page.
 3) Add questions and answers to faq page.
 4) let questions open and collapse on faq page.
 5) add footer
@@ -13,6 +13,7 @@
 <html>
   <head>
     <title>Flymble Business Solutions</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
@@ -20,9 +21,22 @@
 <!-- Style sheet Here -->
     <link rel="stylesheet" type="text/css" href="./css/styles.css">
 
+<!-- A-frame Here -->
+    <script src="https://aframe.io/releases/0.7.0/aframe.min.js"></script>
+    <script src="dist/aframe-master.js"></script>
+    <script src="components/aabb-collider.js"></script>
+    <script src="components/grab.js"></script>
+    <script src="components/ground.js"></script>
+    <script src="shaders/skyGradient.js"></script>
+
 <!-- Google fonts come Here -->
     <link href='http://fonts.googleapis.com/css?family=Roboto:500,900,100,300,700,400' rel='stylesheet' type='text/css'>
   </head>
+
+<!-- J-Query When document is ready... -->
+<script>
+</script>
+
 
 <!-- Get Help Modal wrapper comes here -->
   <div class="modal-wrapper">
@@ -49,17 +63,19 @@
       </div>
       <!-- End-Modal -->
   </div>
+
     <div class="nav fixed-top">
-        <div class="container">
+        <div class="container" style="text-allign:center">
           <ul>
-            <li><a href="index3.html">Home</a></li>
-            <li><a href="#" data-toggle="modal" data-target="#exampleModalLong">VR</a></li>
-            <li><a href="#" data-toggle="modal" data-target="#exampleModalLong">AI</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="web-vr.html">VR</a></li>
+            <li><a href="web-vr.html">AI</a></li>
+            <li><a href="#" data-toggle="modal" data-target="#exampleModalLong">Help</a></li>
             <li><a href="faq.html">FAQ</a></li>
-            <li><a href="https://flymble.slack.com">Slack</a></li>
           </ul>
         </div>
     </div>
+
 
 <!-- Body starts here -->
   <body style="background-color: black">
@@ -75,45 +91,31 @@
         <div class="message">
           <div class="row">
             The Flymble SaaS box has arrived. Scalable travel applications can now be built and tested in a public environment.
+              <div class="col-md-4"></div>
+              <div class="col-md-4"></div>
+              <div class="col-md-4"></div>
           </div>
         </div>
         <div class="cta_wrapper">
         <div class="cta-group">
           <div class="row">
-          <a href="https://github.com/davincios/davincios.github.io" class="cta-group" target="_blank">Github</a>
+          <a href="web-vr.html" class="cta-group" target="_blank">Travel with VR</a>
         </div>
+        <div class="row"><h7>.</h7></div>
+        <div class="row">
+        <a href="https://github.com/davincios/davincios.github.io" class="cta-group" target="_blank">Github</a>
+      </div>
       </div>
       </div>
       </div>
       <!-- Introduction banner ends here-->
     </div>
       <!-- Feautures section starts here-->
-      <div class="features">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-4"></div>
-            <div class="col-md-4">
-            <!-- Adding todolist here here-->
-                    <div class="todo-input">
-                      <input type="text" placeholder="Enter an activity.." id="item">
-                      			<button id="add">
-                      				<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"viewBox="0 0 16 16" style="enable-background:new 0 0 16 16;" xml:space="preserve"><g><path class="fill" d="M16,8c0,0.5-0.5,1-1,1H9v6c0,0.5-0.5,1-1,1s-1-0.5-1-1V9H1C0.5,9,0,8.5,0,8s0.5-1,1-1h6V1c0-0.5,0.5-1,1-1s1,0.5,1,1v6h6C15.5,7,16,7.5,16,8z"/></g></svg>
-                      			</button>
-                    </div>
-                    <div class="container">
-                    			<!-- Uncompleted tasks -->
-                    			<ul class="todo" id="todo"></ul>
-                    			<!-- Completed tasks -->
-                    			<ul class="todo" id="completed"></ul>
-                    </div>
-            <!-- todolist ends here here-->
-          </div>
-          <div class="col-md-4"></div>
-        </div>
+
+<!-- Email sign up starts here-->
+      <div class="email-form">
       </div>
-      </div>
-      <!-- JavaScripts required for todolist  -->
-      <script src="resources/main.js"></script>
+    </div>
   </body>
   </html>
 

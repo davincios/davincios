@@ -428,3 +428,13 @@ ul.todo#completed:after {
     display: none;
   }
 }
+
+
+.destinations img {
+  margin: 10px;
+  width: 100%;
+  background-position: center;
+  margin-left: 10px;
+  margin-top: -10px;
+  padding-top: 30px;
+}

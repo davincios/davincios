@@ -447,12 +447,23 @@ ul.todo#completed:after {
 .middle-content-header {
   position: relative;
   color: black;
-  padding: 30px;
-  margin-top: 10px;
+  padding: 5px;
+  margin-top: 20px;
   font-family: "Roboto", serif;
   text-transform: uppercase;
   text-align: center;
-  font-size: 22px;
+  font-size: 20px;
+  z-index: 1;
+}
+
+.middle-content-sub-header {
+  position: relative;
+  color: black;
+  padding: 10px;
+  margin-bottom: 10px;
+  font-family: "Roboto", serif;
+  text-align: center;
+  font-size: 16px;
   z-index: 1;
 }
 

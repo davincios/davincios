@@ -13,44 +13,48 @@
     <link rel="stylesheet" type="text/css" href="./css/styles.css">
   </head>
 
-
-<div class="nav" style="background-color:black">
-    <div class="container">
-      <ul class="pull-left">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="https://flymble.slack.com">Slack</a></li>
-        <li><a href="https://www.reddit.com/r/Flymble/">Reddit</a></li>
-        <li><a href="https://twitter.com/flymbletravel?lang=en">Twitter</a></li>
-        <li><a href="faq.html">FAQ</a></li>
-      </ul>
-    </div>
-  </div>
-  <body>
-        <div class="modal_section">
-          <div class="modal-wrapper">
-              <!-- Start-Modal -->
-              <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
-                <div class="modal-dialog" role="document">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <h3 class="modal-title" id="exampleModalLongTitle">Get an answer right away</h3>
-                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                      </button>
-                    </div>
-                    <div class="modal-body">
-                      The quickest way to get an answer to your question is to use our Help chat on the main Flymble website. Get information on everything from Flymble payment plans to bookings, cancellations, and more.
-                    </div>
-                    <div class="modal-footer">
-                      <button type="button" class="btn btn-primary" data-dismiss="modal">Ok got it!</button>
-                    </div>
-                  </div>
-                </div>
+  <!-- Get Help Modal wrapper comes here -->
+    <div class="modal-wrapper">
+        <!-- Start-Modal -->
+        <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
               </div>
-              <!-- End-Modal -->
+              <div class="modal-body">
+                <h3 class="modal-title" id="exampleModalLongTitle">Get an answer right away</h3>
+                <p>
+                The quickest way to get an answer to your question is to use our Help chat on the main Flymble website. Get information on everything from Flymble payment plans to bookings, cancellations, and more.
+                </p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-dismiss="modal" onclick="document.location.href='faq.html';">Ok got it!</button>
+              </div>
+            </div>
           </div>
         </div>
-      <div class="faq_section">
+      </div>
+  <!-- End-Modal -->
+
+  <!-- Navigation Bar -->
+      <div class="nav fixed-top">
+          <div class="container" style="text-allign:center">
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="web-vr.html">Web VR</a></li>
+              <li><a href="#" data-toggle="modal" data-target="#exampleModalLong">Help</a></li>
+            </ul>
+          </div>
+      </div>
+  <!-- Navigation Bar Ends here-->
+
+
+  <body style="background-color:black;">
+        <div class="faq-section-content" style="background-color: white;">
+          <div class="container">
             <h2 class="faq_Title">Frequently Asked Questions</h3>
                   <p><strong>Note:</strong> The <strong>FAQ</strong> list is a collection of answers and by no means extensive.
                     Should you have an unanswered question, don't hesitate to contact us by clicking <a href="#" data-toggle="modal" data-target="#exampleModalLong">
@@ -262,40 +266,6 @@ There could have been a typo in your email address when you created the booking,
               <iframe src="https://player.vimeo.com/video/218059426" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
               </div>
               </div>
+            </div>
        </body>
-
-
-
-   <footer>
-    <div class="footer">
-      <div class="container">
-        <div class="socialList">
-           <ul class="pull-left">
-                    <li>
-                      <a href='https://facebook.com/Flymble/'>Facebook</a>
-                    </li>
-                    <li>
-                      <a href="https://twitter.com/flymbletravel">Twitter</a>
-                    </li>
-                    <li>
-                      <a href="https://www.linkedin.com/company/flymble">LinkedIn</a>
-                    </li>
-                    <li>
-                      <a href="https://www.instagram.com/flymbletravel/">Instagram</a>
-                    </li>
-                  </ul>
-          </div>
-        </div>
-        <div class="container">
-          <ul class="linksList">
-                <li><a href="#">How it works</a></li>
-                <li><a href="#">Our story</a></li>
-                <li><a href="#">In the media</a></li>
-                <li><a href="https://www.flynowpaylater.com/faqs" target='_blank' rel='noopener noreferrer'>Fly Now Pay Later FAQ</a></li>
-                <li><a href="#">Affiliate Program</a></li>
-                <li><a href="#">Terms & conditions</a></li>
-                <li><a href="#">Cookies & Privacy Policy</a></li>
-          </ul>
-         </div>
-      </footer>
-  </html>
+</html>

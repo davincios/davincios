@@ -22,19 +22,17 @@
     <link href='http://fonts.googleapis.com/css?family=Roboto:500,900,100,300,700,400' rel='stylesheet' type='text/css'>
   </head>
 
-  <body>
-    <div class="nav fixed-top" style="background-color: black">
-        <div class="container">
-          <div class="row"></div>
-          <div class="col-md-4"></div>
-          <div class="col-md-4">
-          <ul class="pull-left">
-            <li><a href="index.html">BACK</a></li>
-          </ul>
-        </div>
-        <div class="col-md-4"></div>
-        </div>
-    </div>
+  <body style="background-color: black">
+      <!-- Navigation Bar come's Here -->
+            <div class="nav fixed-top">
+                <div class="container" style="text-allign:center">
+                  <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#" data-toggle="modal" data-target="#exampleModalLong">Help</a></li>
+                  </ul>
+                </div>
+            </div>
+  <!-- VR code come's Here -->
     <a-scene fog="color: #bc483e; near: 0; far: 65;">
       <a-assets>
         <a-mixin id="cube"

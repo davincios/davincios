@@ -15,13 +15,19 @@
     <title>Flymble Business Solutions</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- jQuery and Bootstrap CDN -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
-<!-- Style sheet Here -->
+    <!-- React and JSX JSXTransformer -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.13.3/react.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.13.3/JSXTransformer.js"></script>
+
+    <!-- Style sheet Here -->
     <link rel="stylesheet" type="text/css" href="./css/styles.css">
 
-<!-- A-frame Here -->
+    <!-- A-frame Here -->
     <script src="https://aframe.io/releases/0.7.0/aframe.min.js"></script>
     <script src="dist/aframe-master.js"></script>
     <script src="components/aabb-collider.js"></script>
@@ -29,13 +35,24 @@
     <script src="components/ground.js"></script>
     <script src="shaders/skyGradient.js"></script>
 
-<!-- Google fonts come Here -->
+    <!-- Google fonts come Here -->
     <link href='http://fonts.googleapis.com/css?family=Roboto:500,900,100,300,700,400' rel='stylesheet' type='text/css'>
-  </head>
+</head>
 
-<!-- J-Query When document is ready... -->
-<script>
+    <!-- React DOM Rendering starts here -->
+      <script type="text/jsx">
+        var DonaldsComponent = React.createClass({
+            render: function() {
+                return (
+                        <h2>My name is Donald Fuck</h2>
+                );
+            }
+        });
+        React.render(<DonaldsComponent />, document.getElementById('content-react'));
 </script>
+    <!-- React DOM Rendering Ends here -->
+
+
 
 
 <!-- Get Help Modal wrapper comes here -->
@@ -56,7 +73,7 @@
               </p>
             </div>
             <div class="modal-footer">
-              <button type="button" class="btn btn-primary" data-dismiss="modal" onclick="document.location.href='faq.html';">Ok got it!</button>
+              <button type="button" class="btn btn-primary" data-dismiss="modal" onclick="document.location.href='sitemap/faq.html';">Ok got it!</button>
             </div>
           </div>
         </div>
@@ -69,8 +86,8 @@
         <div class="container" style="text-allign:center">
           <ul>
             <li><a href="index.html">Home</a></li>
-            <li><a href="web-vr.html">Virtual Reality</a></li>
-            <li><a href="web-vr.html">About us</a></li>
+            <li><a href="sitemap\web-vr.html">Virtual Reality</a></li>
+            <li><a href="sitemap\web-vr.html">About us</a></li>
             <li><a href="#" data-toggle="modal" data-target="#exampleModalLong">Help</a></li>
           </ul>
         </div>
@@ -84,7 +101,7 @@
             <div class="row">
                 <div class="logo">
                 <div class="col-md-4"></div>
-                <div class="col-md-4"><img src="spinning_logo.gif"></div>
+                <div class="col-md-4"><img src="resources\spinning_logo.gif"></div>
                 <div class="col-md-4"></div>
         </div>
           </div>
@@ -183,49 +200,31 @@
             </div>
          </div>
        </div>
-       <!-- Instagram Feed starts here-->
-       <!-- How it works section ends here -->
-               <div class="instagram-content">
-                 <div class="container">
-                   <div class="middle-content-header">
-                       <p><span>Live Instagram Feed</span></p>
-                   </div>
-                   <div class="instagram-photos">
-                   <div id="instafeed" class="instaimg"></div>
-                 </div>
+      <!-- How it works section ends here -->
+      <!-- React JS starts here -->
+        <div class="reactjs-section">
+            <div class="container">
+                <div id="content-react"><div>
+                    </div>
+                  </div>
+                </div>
+          </div>
+        <!-- React JS ends here -->
+        <!-- Instagram Feed starts here-->
+                <div class="instagram-content">
+                  <div class="container">
+                    <div class="middle-content-header">
+                        <p><span>Live Instagram Feed</span></p>
+                    </div>
+                    <div class="instagram-photos">
+                    <div id="instafeed" class="instaimg"></div>
+                  </div>
+                </div>
                </div>
-              </div>
-       <!-- Instagram Feed ends here-->
-        <!-- Web VR starts here -->
-        <div class="vr-content">
-          <div class="container">
-            <div class="middle-content-header">
-                <p><span>World's VR Adventures</span></p>
-            </div>
-            <!--
-            <div class="middle-content-sub-header" style="display:center-block">
-            <p>Entirely powered by our cutting-edge AI infrastructure to let you explore the world at it's best</p>
-           </div>-->
-            <div class="row">
-              <div class="col-md-3">
-                <iframe width="auto" height="315" src="https://www.youtube.com/embed/I3W1kyp9Jpc" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
-              </div>
-              <div class="col-md-3">
-                <iframe width="auto" height="315" src="https://www.youtube.com/embed/pzHFDftgSZQ" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
-              </div>
-              <div class="col-md-3">
-                <iframe width="auto" height="315" src="https://www.youtube.com/embed/c858UGeCeG4" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
-              </div>
-              <div class="col-md-3">
-                <iframe width="auto" height="315" src="https://www.youtube.com/embed/f6MjnyS6EDM" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
-              </div>
-            </div>
-         </div>
-        </div>
-        <!-- Web VR ends here -->
+        <!-- Instagram Feed ends here-->
 
-      </div>
-    </div>
+
+        <!-- ALL PAGE CONTENT ends here-->
 
 
          <!-- Instagfeed scripts are found below here-->
@@ -252,17 +251,15 @@
                                 }
                             },
                         });
-
                         // bind the load more button
                         loadButton.addEventListener('click', function() {
                             feed.next();
                         });
-
                         // run our feed!
                         feed.run();
-                    </script>
-
+                        </script>
         <!-- Instagfeed scripts END HERE-->
+
   </body>
   </html>
 

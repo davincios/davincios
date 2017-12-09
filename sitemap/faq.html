@@ -1,0 +1,271 @@
+<!-- ToDo:
+1) Add all affirm questions into FAQ questions page
+2)
+-->
+
+
+<html>
+  <head>
+    <title>Flymble Business Solutions</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="../css/styles.css">
+  </head>
+
+  <!-- Get Help Modal wrapper comes here -->
+    <div class="modal-wrapper">
+        <!-- Start-Modal -->
+        <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <h3 class="modal-title" id="exampleModalLongTitle">Get an answer right away</h3>
+                <p>
+                The quickest way to get an answer to your question is to use our Help chat on the main Flymble website. Get information on everything from Flymble payment plans to bookings, cancellations, and more.
+                </p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-dismiss="modal" onclick="document.location.href='faq.html';">Ok got it!</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  <!-- End-Modal -->
+
+  <!-- Navigation Bar -->
+      <div class="nav fixed-top">
+          <div class="container" style="text-allign:center">
+            <ul>
+              <li><a href="../index.html">Home</a></li>
+              <li><a href="../web-vr.html">Web VR</a></li>
+              <li><a href="#" data-toggle="modal" data-target="#exampleModalLong">Help</a></li>
+            </ul>
+          </div>
+      </div>
+  <!-- Navigation Bar Ends here-->
+
+
+  <body style="background-color:black;">
+        <div class="faq-section-content" style="background-color: white;">
+          <div class="container">
+            <h2 class="faq_Title">Frequently Asked Questions</h3>
+                  <p><strong>Note:</strong> The <strong>FAQ</strong> list is a collection of answers and by no means extensive.
+                    Should you have an unanswered question, don't hesitate to contact us by clicking <a href="#" data-toggle="modal" data-target="#exampleModalLong">
+                                    here.
+                                  </a></p>
+                  <h3 class="faq_About">About Flymble</h3>
+                    <div class="panel-group" id="accordion">
+                      <div class="panel panel-default">
+                        <div class="panel-heading">
+                          <h4 class="panel-title">
+                          <a href="#q01" data-parent="#accordion" data-toggle="collapse">What is Flymble?</a>
+                          </h4>
+                        </div>
+                        <div id="q01" class="panel-collapse collapse">
+                          <div class="panel-body">Flymble is a flight booking platform that helps you travel anywhere affordably. In addition to financing, our powerful search engine compares prices across dozens of different airlines to find you the cheapest rates.</div>
+                        </div>
+                      </div>
+                      <div class="panel panel-default">
+                        <div class="panel-heading">
+                          <h4 class="panel-title">
+                          <a href="#q02" data-parent="#accordion" data-toggle="collapse">What is required to book with Flymble?</a>
+                          </h4>
+                        </div>
+                        <div id="q02" class="panel-collapse collapse">
+                          <div class="panel-body">To book with Flymble you need:
+                            <ul>
+                              <li>You must be over 18 in order to pass the credit check.</li>
+                              <li>You must be a resident of the UK in order to apply.</li>
+                              <li>You must have a UK mobile phone in order to apply.</li>
+                              <li>You must have a UK Debit or Credit Card.</li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="panel panel-default">
+                        <div class="panel-heading">
+                          <h4 class="panel-title">
+                          <a href="#q03" data-parent="#accordion" data-toggle="collapse">Is there any interest associated with Flymble payment plans? Do you charge a fee?</a>
+                          </h4>
+                        </div>
+                        <div id="q03" class="panel-collapse collapse">
+                          <div class="panel-body">Yes, we do. Flymble charges between 3% and 45% APR interest. The corresponding finance charge is the only fee associated with an Affirm loan - we don’t charge late fees, service fees, prepayment fees, or any other hidden fees. We strive always to be more transparent and fair than any other form of financing.</div>
+                          </div>
+                      </div>
+                      <div class="panel panel-default">
+                        <div class="panel-heading">
+                          <h4 class="panel-title">
+                          <a href="#q04" data-parent="#accordion" data-toggle="collapse">I can only book flights between £250 and £2000. Why?</a>
+                          </h4>
+                        </div>
+                        <div id="q04" class="panel-collapse collapse">
+                          <div class="panel-body">Our credit provider currently only allows payment plans for order values ranging from £250 to £2000. The order value equals the total sum of all airfares and fees.</div>
+                        </div>
+                      </div>
+                      <div class="panel panel-default">
+                        <div class="panel-heading">
+                          <h4 class="panel-title">
+                          <a href="#q05" data-parent="#accordion" data-toggle="collapse">Do I need to pay off all my instalments before I can fly?</a>
+                          </h4>
+                        </div>
+                        <div id="q05" class="panel-collapse collapse">
+                          <div class="panel-body">No! Simply pay 1/10th upfront and you receive your ticket. Fly now, and pay later.</div>
+                        </div>
+                      </div>
+                      <div class="panel panel-default">
+                        <div class="panel-heading">
+                          <h4 class="panel-title">
+                          <a href="#q06" data-parent="#accordion" data-toggle="collapse">What are my payment options?</a>
+                          </h4>
+                        </div>
+                        <div id="q06" class="panel-collapse collapse">
+                          <div class="panel-body">When you make a purchase of £250 or more with Flymble, you can pay over 3, 4, 5, 6, 7, 8, 9, or 10 months. Maximum order values are £2000.</div>
+                        </div>
+                      </div>
+                      <div class="panel panel-default">
+                        <div class="panel-heading">
+                          <h4 class="panel-title">
+                          <a href="#q07" data-parent="#accordion" data-toggle="collapse">Do I have a credit limit with Flymble?</a>
+                          </h4>
+                        </div>
+                        <div id="q07" class="panel-collapse collapse">
+                          <div class="panel-body">Unlike a credit card, Flymble is not a revolving line of credit. While customers can take out multiple Flymble payment plans at once, each Flymble loan application is evaluated separately as a closed-end transaction. An application from a returning customer may be denied, however, if that customer has failed to repay other Flymble payment plans on time or if the customer shows excessive borrowing behavior.</div>
+                        </div>
+                      </div>
+                      <div class="panel panel-default">
+                        <div class="panel-heading">
+                          <h4 class="panel-title">
+                          <a href="#q08" data-parent="#accordion" data-toggle="collapse">What is Fly Now Pay Later and how is it related to Flymble?</a>
+                          </h4>
+                        </div>
+                        <div id="q08" class="panel-collapse collapse">
+                          <div class="panel-body">Fly Now Pay Later Limited is the credit provider for all Flymble payment plans, and is authorized and regulated by the Financial Conduct Authority under registration number 778540.</div>
+                        </div>
+                      </div>
+                      <div class="panel panel-default">
+                        <div class="panel-heading">
+                          <h4 class="panel-title">
+                          <a href="#q09" data-parent="#accordion" data-toggle="collapse">Does Flymble perform a credit check?</a>
+                          </h4>
+                        </div>
+                        <div id="q09" class="panel-collapse collapse">
+                          <div class="panel-body">Yes, when you book your first flight with Flymble, we perform a ´soft´ credit check to help verify your identity and determine your eligibility for financing. This ´soft´ credit check will not affect your credit score.</div>
+                        </div>
+                      </div>
+                      <div class="panel panel-default">
+                        <div class="panel-heading">
+                          <h4 class="panel-title">
+                          <a href="#q010" data-parent="#accordion" data-toggle="collapse">Is my personal information secure with Flymble?</a>
+                          </h4>
+                        </div>
+                        <div id="q010" class="panel-collapse collapse">
+                          <div class="panel-body">Yes, protecting your personal information is very important to us. We encrypt sensitive data including paspoort data. We also maintain physical, electronic, and procedural safeguards to protect your information. We do not sell or rent your information to anyone. You can read more about our Privacy Policy.</div>
+                        </div>
+                      </div>
+                      <div class="panel panel-default">
+                        <div class="panel-heading">
+                          <h4 class="panel-title">
+                          <a href="#q011" data-parent="#accordion" data-toggle="collapse">How come Flymble is able to offer Payment Plans?</a>
+                          </h4>
+                        </div>
+                        <div id="q011" class="panel-collapse collapse">
+                          <div class="panel-body">Flymble works with an independent financing partner to offer short-term loans/credit to travellers.</div>
+                        </div>
+                      </div>
+                      <h3 class="faq_Book">Booking flights with Flymble</h3>
+                      <div class="panel panel-default">
+                        <div class="panel-heading">
+                          <h4 class="panel-title">
+                          <a href="#q1" data-parent="#accordion" data-toggle="collapse">What is an e-ticket?</a>
+                          </h4>
+                        </div>
+                        <div id="q1" class="panel-collapse collapse">
+                          <div class="panel-body">The e-ticket is your flight confirmation from Kiwi.com which you should print out and bring with you on your trip. After your reservation is complete, we will send you an email confirmation with an attached e-ticket.</div>
+                          <div class="panel-footer">Please read your e-ticket carefully because it contains important information about your flights and the check-in process. If your flight is not eligible for online check-in, you will need to show the airline your e-ticket so that they can print out your boarding pass.</div>
+                        </div>
+                      </div>
+                      <div class="panel panel-default">
+                        <div class="panel-heading">
+                          <h4 class="panel-title">
+                          <a href="#q2" data-parent="#accordion" data-toggle="collapse">What if there is an delay in receiving my e-ticket?</a>
+                          </h4>
+                        </div>
+                        <div id="q2" class="panel-collapse collapse">
+                          <div class="panel-body">We have already started processing your booking. There may be a delay due to minor technical issues and we will send you confirmation as soon as the booking has been completed</div>
+                          <div class="panel-footer">If you have not received any email from us at all, please contact our Customer Support Team to ensure that we have the correct email address for you.</div>
+                        </div>
+                      </div>
+                      <div class="panel panel-default">
+                        <div class="panel-heading">
+                          <h4 class="panel-title">
+                          <a href="#q3" data-parent="#accordion" data-toggle="collapse">Which name should I use when booking my ticket?</a>
+                          </h4>
+                        </div>
+                        <div id="q3" class="panel-collapse collapse">
+                          <div class="panel-body">You should use the names exactly as they are written in your passport or travel ID.</div>
+                          <div class="panel-footer">Your passport will indicate which names are first names and which names are surnames.
+
+Examples:
+If you have recently been married but your passport still has your maiden name, you should use your maiden name in the booking.
+If your passport says "John James Smith" but you don't commonly use your middle name, you still need to add it to your booking.
+Your middle name should be added together with your first name in the same input box. In this example, the first names would be John James.
+Similarly, all surnames should be added together in the correct order in the surname box.
+Some airlines will not allow you to board the aircraft if the name on your booking does not match your travel ID or passport.
+Airlines can charge a fee to correct your name after the booking is made.</div>
+                        </div>
+                      </div>
+                      <div class="panel panel-default">
+                        <div class="panel-heading">
+                          <h4 class="panel-title">
+                          <a href="#q4" data-parent="#accordion" data-toggle="collapse">How do I know if my tickets are reserved?</a>
+                          </h4>
+                        </div>
+                        <div id="q4" class="panel-collapse collapse">
+                          <div class="panel-body">As soon as you receive the confirmation email.</div>
+                          <div class="panel-footer">You should receive the confirmation email less than 30 minutes after making your booking.</div>
+                        </div>
+                      </div>
+                      <div class="panel panel-default">
+                        <div class="panel-heading">
+                          <h4 class="panel-title">
+                          <a href="#q5" data-parent="#accordion" data-toggle="collapse">What phone number should I provide?</a>
+                          </h4>
+                        </div>
+                        <div id="q5" class="panel-collapse collapse">
+                          <div class="panel-body">Please provide us with one or more phone numbers that we can reliably reach you on throughout your travels.</div>
+                          <div class="panel-footer">If there are any schedule changes, cancellations, airport strikes, etc, we need to inform you and let you know your options.
+
+Entering a phone number
+Select your country code.
+Add your phone number in the international format.
+For example, if you are from the UK, you should remove the first zero from your number.</div>
+                        </div>
+                      </div>
+                      <div class="panel panel-default">
+                        <div class="panel-heading">
+                          <h4 class="panel-title">
+                          <a href="#q6" data-parent="#accordion" data-toggle="collapse">What If I didn't receive a confirmation e-mail of my flight tickets?</a>
+                          </h4>
+                        </div>
+                        <div id="q6" class="panel-collapse collapse">
+                          <div class="panel-body">Please check your spam folder and then contact us if you do not find anything.</div>
+                          <div class="panel-footer">You should receive an email confirmation for your flights within two hours of making your booking, otherwise:
+It could be in your spam folder
+There could have been a typo in your email address when you created the booking, so please contact us on chat or by phone to correct this for you</div>
+                        </div>
+                      </div>
+                </div>
+                <h3>Our story - Together we've been everywhere</h3>
+              <iframe src="https://player.vimeo.com/video/218059426" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+              </div>
+              </div>
+            </div>
+       </body>
+</html>

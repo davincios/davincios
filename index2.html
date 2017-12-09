@@ -149,15 +149,19 @@
           </div>
         </div>
         <!-- PR section ends here -->
+
         <!-- How it works sections starts here -->
         <div class="offerings-section">
           <div class="container">
             <div class="row">
               <div class="col-md-6">
-                <div class="offering-image">
-                  <img src="resources\offering-empty.jpg" alt="What TRVL offers" class="object-fit-cover background-image">
-                  <img data-v-36f2967b="" src="/assets/img/home/dot.png" class="dot dot-small" style="visibility: inherit; opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);">
-                </div>
+                <!-- Instagram Feed starts here-->
+                        <div class="instagram-content">
+                            <div class="instagram-photos">
+                            <div id="instafeed" class="instaimg"></div>
+                          </div>
+                        </div>
+                <!-- Instagram Feed ends here-->
               </div>
               <div class="col-md-6">
                   <h1>The Travel<span style="color: black"> Revolution</span>.</h1>
@@ -183,19 +187,6 @@
             </div>
          </div>
        </div>
-       <!-- Instagram Feed starts here-->
-       <!-- How it works section ends here -->
-               <div class="instagram-content">
-                 <div class="container">
-                   <div class="middle-content-header">
-                       <p><span>Live Instagram Feed</span></p>
-                   </div>
-                   <div class="instagram-photos">
-                   <div id="instafeed" class="instaimg"></div>
-                 </div>
-               </div>
-              </div>
-       <!-- Instagram Feed ends here-->
         <!-- Web VR starts here -->
         <div class="vr-content">
           <div class="container">
@@ -234,7 +225,7 @@
                             var feed = new Instafeed({
                             get: 'user',
                             sortBy: 'most-liked',
-                            limit: '14',
+                            limit: '9',
                             userId: '4536414356',
                             accessToken: '4536414356.1677ed0.c0aa9b5025ae4d7baa22d45cd38410f4'
                             });

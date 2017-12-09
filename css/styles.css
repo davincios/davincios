@@ -535,6 +535,14 @@ ul.todo#completed:after {
   z-index: 1;
 }
 
+.offerings-section {
+  margin-top: 30px;
+}
+
+.offering-image img {
+  max-width: 100%;
+  max-height: 100%;
+}
 
 .HowItWorksCard__cardContent {
     background-size: 60% 60%;
@@ -553,6 +561,7 @@ ul.todo#completed:after {
     margin: auto;
     position: relative;
     text-rendering: optimizeLegibility;
+
 }
 
 .HowItWorksCardStep__number {

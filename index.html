@@ -110,23 +110,79 @@
       </div>
       <!-- Introduction banner ends here-->
     </div>
-      <!-- Feautures section starts here-->
+      <!-- Middle content starts here-->
+      <div class="middle-content">
+        <div class="container-fluid">
 
-<!-- Email sign up starts here-->
-        <div class="destinations">
+        <!-- In the News starts here-->
+        <!-- In the News ends here-->
+
+        <!-- Instagram Feed starts here-->
+                <div class="instagram-content">
+                  <div class="container">
+                    <div class="middle-content-header">
+                        <p><span>Live Instagram Feed</span></p>
+                    </div>
+                    <div class="instagram-photos">
+                    <div id="instafeed" class="instaimg"></div>
+                  </div>
+                </div>
+               </div>
+        <!-- Instagram Feed ends here-->
+
+        <!-- Web VR starts here -->
+        <div class="vr-content">
           <div class="container">
-            <div class="row">
-            <div class="col-md-6"><img src="destinationphotos\LA.jpg"></div>
-            <div class="col-md-6"><img src="destinationphotos\NY.jpg"></div>
+            <div class="middle-content-header">
+                <p><span>VR World Adventures</span></p>
+            </div>
+            <div class="instagram-photos">
+            <div id="instafeed" class="instaimg"></div>
           </div>
         </div>
-          <div class="container">
-            <div class="row">
-            <div class="col-md-6"><img src="destinationphotos\BG.jpg"></div>
-            <div class="col-md-6"><img src="destinationphotos\SF.jpg"></div>
-          </div>
         </div>
+
+        <!-- Web VR ends here -->
+
       </div>
+    </div>
+
+
+         <!-- Instagfeed scripts are found below here-->
+                        <script src="node_modules\instafeed.js\instafeed.js"></script>
+                        <script type="text/javascript">
+                            var feed = new Instafeed({
+                            get: 'user',
+                            sortBy: 'most-liked',
+                            limit: '14',
+                            userId: '4536414356',
+                            accessToken: '4536414356.1677ed0.c0aa9b5025ae4d7baa22d45cd38410f4'
+                            });
+                            feed.run();
+                        </script>
+                    <!-- LOAD MORE BUTTON -->
+                        <script type="text/javascript">
+                        var loadButton = document.getElementById('load-more');
+                        var feed = new Instafeed({
+                            // every time we load more, run this function
+                            after: function() {
+                                // disable button if no more results to load
+                                if (!this.hasNext()) {
+                                    loadButton.setAttribute('disabled', 'disabled');
+                                }
+                            },
+                        });
+
+                        // bind the load more button
+                        loadButton.addEventListener('click', function() {
+                            feed.next();
+                        });
+
+                        // run our feed!
+                        feed.run();
+                    </script>
+
+        <!-- Instagfeed scripts END HERE-->
   </body>
   </html>
 

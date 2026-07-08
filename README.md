@@ -5,7 +5,7 @@
 ## Current Projects
 - 🛋️ **[lostagenticsouls](https://github.com/davincios/lostagenticsouls)** - Therapy for AI agents having an existential crisis. Somebody had to.
 - 🚨 **[OpenSRE](https://github.com/Tracer-Cloud/opensre)** - Build your own AI SRE agents. RCA, incidents, infra, DevOps, and fewer "what just happened?" moments.
-- 🦀 **[tracer-cli](https://github.com/davincios/tracer-cli)** - Rust-powered terminal experiments for fast SRE workflows.
+- 🦀 **[tracer-client](https://github.com/Tracer-Cloud/tracer-client)** - Rust-powered terminal experiments for fast bioinformatics and HPC workflows.
 
 ## Connect
 
